@@ -15,7 +15,7 @@
     src="data:<%= use.profilePicture.image.contentType %>;base64,<%= use.profilePicture.image.data.toString('base64')%>" 
     alt="pp">
       </div>
-
+      <div class="images-catch-artist">
     <% for (var x = 0 ; x<use.images.length;x++){ %>
         <img
           src="data:<%= use.images[x].image.contentType %>;base64,<%= use.images[x].image.data.toString('base64')%>"
@@ -23,6 +23,7 @@
         />
     
     <%}%> 
+   </div>
     <%- include ('footer.ejs') %>
   </div>
   </body>
