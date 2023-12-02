@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <%- include ('header.ejs') %>
+      <div class="visited-artist-info">
+       <h2><%= use.username%></h2>
+    <img 
+    src="data:<%= use.profilePicture.image.contentType %>;base64,<%= use.profilePicture.image.data.toString('base64')%>" 
+    alt="pp">
+      </div>
+
+    <% for (var x = 0 ; x<use.images.length;x++){ %>
+        <img
+          src="data:<%= use.images[x].image.contentType %>;base64,<%= use.images[x].image.data.toString('base64')%>"
+          alt="img"
+        />
+    
+    <%}%> 
+    <%- include ('footer.ejs') %>
+  </div>
+  </body>
+</html>

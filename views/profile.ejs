@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+    <%- include ('header.ejs') %>
+   
+    
+      <div class="artist">
+      <div class="artist-info">
+      <h2><%= use.username%></h2>
+      <img 
+      src="data:<%= use.profilePicture.image.contentType %>;base64,<%= use.profilePicture.image.data.toString('base64')%>" 
+      alt="pp">
+      <div class="icons">
+        <a href="https://google.com" target="”_blank”" rel="noopener"
+          ><img src="images/facebook-b.png" alt="img"
+        /></a>
+        <a href="https://google.com" target="”_blank”" rel="noopener"
+          ><img src="images/behance-b.png" alt="img"
+        /></a>
+        <a href="https://google.com" target="”_blank”" rel="noopener"
+          ><img src="images/twitter-b.png" alt="img"
+        /></a>
+      </div>
+      <form action="/add-image" method="post" enctype="multipart/form-data" class="image-upload">
+        <label for="avatar">Upload an image </label>
+        <input type="file" name="avatar" />
+        <button type="submit">Submit image</button>
+      </form>
+      <form action="/" method="post" class="signout">
+        <input  type="submit" name="button" value="sign out " />
+      </form>
+    </div>
+    <span></span>
+
+    <div class="artist-images">
+    
+    <% for (var x = 0 ; x<use.images.length;x++){ %>
+
+      <div class="images">
+        <img
+          src="data:<%= use.images[x].image.contentType %>;base64,<%= use.images[x].image.data.toString('base64')%>"
+          alt="img"
+        />
+      </div>
+        <%}%>
+      </div>
+     
+
+    </div>
+    
+    <%- include ('footer.ejs') %>
+    </div>
+  </body>
+</html>

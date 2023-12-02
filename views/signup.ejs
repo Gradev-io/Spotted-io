@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <%- include('header.ejs')%>
+      <form
+        action="/register"
+        method="post"
+        enctype="multipart/form-data"
+        class="sign"
+      >
+        <input type="text" name="username" placeholder="Enter your username" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <input
+          type="text"
+          name="instagram_link"
+          placeholder="Enter your instagram_link"
+        />
+        <input
+          type="text"
+          name="facebook_link"
+          placeholder="Enter your facebook_link"
+        />
+        <input
+          type="text"
+          name="behance_link"
+          placeholder="Enter your behance_link"
+        />
+        <input
+          type="text"
+          name="twitter_link"
+          placeholder="Enter your twitter_link"
+        />
+        <label for="avatar">Submit a profile picture</label>
+        <input type="file" name="avatar" />
+
+        <button type="submit">submit</button>
+      </form>
+      <%- include('footer.ejs')%>
+    </div>
+  </body>
+</html>

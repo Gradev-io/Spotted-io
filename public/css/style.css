@@ -1,0 +1,744 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .landing-mother-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+  }
+  .landing-mother-container > .landing-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #f6f3c2;
+    padding: 2rem;
+  }
+  .landing-container-1 > .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .landing-container-1 > .links > a {
+    text-decoration: none;
+    color: #ea6703;
+    font-family: "Segoe UI";
+  }
+  .landing-container-1 > .logo {
+    height: 40px;
+    width: 160px;
+  }
+  .landing-container-1 > .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .landing-container-1 > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .landing-mother-container > .landing-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 4rem;
+  }
+  .landing-container-1 > h1 {
+    font-family: Celebes;
+    font-size: 2rem;
+    color: #ea6703;
+  }
+
+  .landing-container-1 > .linkss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .landing-container-1 > .linkss > h3 {
+    font-family: Celebes;
+    font-weight: lighter;
+  }
+  .landing-container-1 > .linkss > h3 > a {
+    font-family: Celebes;
+    text-decoration: none;
+    color: #ea6703;
+  }
+
+  .landing-container-2 > .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .btns > .button-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+  }
+  .btns > .button-signin:hover {
+    width: 9rem;
+  }
+  .btns > .button-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+  }
+  .btns > .button-signup:hover {
+    width: 9rem;
+  }
+  .button-signin > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: arial;
+  }
+  .button-signup > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: arial;
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    row-gap: 6rem;
+  }
+  .main-container > .container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .main-container > .container-header > .link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .main-container > .container-header > .link > a {
+    text-decoration: none;
+    color: grey;
+    font-family: segoe UI;
+  }
+
+  .main-container > .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f3c2;
+    row-gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .main-container > .container-footer > img {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .main-container > .container-footer > .linkss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-container > .container-footer > .linkss > h3 {
+    font-family: Celebes;
+    font-weight: lighter;
+  }
+  .main-container > .container-footer > .linkss > h3 > a {
+    font-family: Celebes;
+    text-decoration: none;
+    color: #ea6703;
+  }
+  .main-container > .container-footer > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .main-container > .sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .main-container > .sign > input {
+    height: 2.5rem;
+    width: 16rem;
+    border: 2px solid rgba(128, 128, 128, 0.526);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    font-family: SansSerif;
+  }
+  .main-container > .sign > label {
+    font-family: SansSerif;
+  }
+  .main-container > .sign > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    padding: 1.3rem;
+    border: none;
+    font-family: Segoe UI Emoji;
+    cursor: pointer;
+    background-color: #bba15c;
+  }
+  .main-container > .artist > .artist-info > .signout > input {
+    border-radius: 100px;
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    font-family: Segoe UI Emoji;
+    cursor: pointer;
+    background-color: #bba15c;
+  }
+  .main-container > .artist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .main-container > .artist > span {
+    height: 15rem;
+    width: 4px;
+    background-color: #ea6703;
+  }
+  .main-container > .artist > .artist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 10px;
+  }
+  .main-container > .artist > .artist-info > .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .main-container > .artist > .artist-info > h2 {
+    font-family: Sitka Banner;
+  }
+
+  .main-container > .artist > .artist-info > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .main-container > .artist > .artist-info > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .main-container > .artist > .artist-info > .image-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3px;
+  }
+  .main-container > .artist > .artist-info > .image-upload > input {
+    background-color: #bba15c;
+    border: 1px solid #ea6703;
+  }
+  .main-container > .artist > .artist-info > .image-upload > label {
+    font-family: segoe UI;
+  }
+  .main-container > .artist > .artist-info > .image-upload > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    color: white;
+  }
+  .main-container > .artist > .artist-images {
+    padding: 10px;
+    columns: 3;
+  }
+  .main-container > .artist > .artist-images > .images {
+    width: 100%;
+  }
+  .main-container > .artist > .artist-images > .images > img {
+    max-width: 100%;
+  }
+  .main-container > .list-of-users {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+  }
+  .main-container > .list-of-users > .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 10px;
+  }
+
+  .main-container > .list-of-users > .user > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main-container > .list-of-users > .user > h2 {
+    font-family: segoe UI;
+  }
+  .main-container > .list-of-users > .user > .go-to-visit > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    color: white;
+  }
+  .main-container > .visited-artist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .main-container > .visited-artist-info > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main-container > .visited-artist-info > h2 {
+    font-family: segoe UI;
+    font-weight: normal;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .landing-mother-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+  }
+  .landing-mother-container > .landing-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #f6f3c2;
+    padding: 2rem;
+  }
+  .landing-container-1 > .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .landing-container-1 > .links > a {
+    text-decoration: none;
+    color: #ea6703;
+    font-family: "Segoe UI";
+  }
+  .landing-container-1 > .logo {
+    height: 40px;
+    width: 160px;
+  }
+  .landing-container-1 > .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .landing-container-1 > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .landing-mother-container > .landing-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 4rem;
+  }
+  .landing-container-1 > h1 {
+    font-family: Celebes;
+    font-size: 2rem;
+    color: #ea6703;
+  }
+
+  .landing-container-1 > .linkss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .landing-container-1 > .linkss > h3 {
+    font-family: Celebes;
+    font-weight: lighter;
+  }
+  .landing-container-1 > .linkss > h3 > a {
+    font-family: Celebes;
+    text-decoration: none;
+    color: #ea6703;
+  }
+
+  .landing-container-2 > .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .btns > .button-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+  }
+  .btns > .button-signin:hover {
+    width: 9rem;
+  }
+  .btns > .button-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+  }
+  .btns > .button-signup:hover {
+    width: 9rem;
+  }
+  .button-signin > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: arial;
+  }
+  .button-signup > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: arial;
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    row-gap: 6rem;
+  }
+  .main-container > .container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .main-container > .container-header > .link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .main-container > .container-header > .link > a {
+    text-decoration: none;
+    color: grey;
+    font-family: segoe UI;
+  }
+
+  .main-container > .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f3c2;
+    row-gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .main-container > .container-footer > img {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .main-container > .container-footer > .linkss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-container > .container-footer > .linkss > h3 {
+    font-family: Celebes;
+    font-weight: lighter;
+  }
+  .main-container > .container-footer > .linkss > h3 > a {
+    font-family: Celebes;
+    text-decoration: none;
+    color: #ea6703;
+  }
+  .main-container > .container-footer > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .main-container > .sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .main-container > .sign > input {
+    height: 2.5rem;
+    width: 16rem;
+    border: 2px solid rgba(128, 128, 128, 0.526);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    font-family: SansSerif;
+  }
+  .main-container > .sign > label {
+    font-family: SansSerif;
+  }
+  .main-container > .sign > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    padding: 1.3rem;
+    border: none;
+    font-family: Segoe UI Emoji;
+    cursor: pointer;
+    background-color: #bba15c;
+  }
+  .main-container > .artist > .artist-info > .signout > input {
+    border-radius: 100px;
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    font-family: Segoe UI Emoji;
+    cursor: pointer;
+    background-color: #bba15c;
+  }
+  .main-container > .artist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 3rem;
+  }
+  .main-container > .artist > span {
+    width: 15rem;
+    height: 4px;
+    background-color: #ea6703;
+  }
+  .main-container > .artist > .artist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 10px;
+  }
+  .main-container > .artist > .artist-info > .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .main-container > .artist > .artist-info > h2 {
+    font-family: Sitka Banner;
+  }
+
+  .main-container > .artist > .artist-info > .icons > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .main-container > .artist > .artist-info > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .main-container > .artist > .artist-info > .image-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3px;
+  }
+  .main-container > .artist > .artist-info > .image-upload > input {
+    background-color: #bba15c;
+    border: 1px solid #ea6703;
+  }
+  .main-container > .artist > .artist-info > .image-upload > label {
+    font-family: segoe UI;
+  }
+  .main-container > .artist > .artist-info > .image-upload > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    color: white;
+  }
+  .main-container > .artist > .artist-images {
+    padding: 10px;
+    columns: 3;
+    margin-top: 4rem;
+  }
+  .main-container > .artist > .artist-images > .images {
+    width: 100%;
+  }
+  .main-container > .artist > .artist-images > .images > img {
+    max-width: 100%;
+  }
+  .main-container > .list-of-users {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  .main-container > .list-of-users > .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 10px;
+  }
+
+  .main-container > .list-of-users > .user > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main-container > .list-of-users > .user > h2 {
+    font-family: segoe UI;
+  }
+  .main-container > .list-of-users > .user > .go-to-visit > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea6703;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    color: white;
+  }
+  .main-container > .visited-artist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .main-container > .visited-artist-info > img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main-container > .visited-artist-info > h2 {
+    font-family: segoe UI;
+    font-weight: normal;
+  }
+}

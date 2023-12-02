@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <div class="main-container">
+    <%- include ('header.ejs') %>
+    <div class="list-of-users">
+  
+    <% for (var i=0;i<users.length;i++){ %>
+      <div class="user">
+      <h2><%=users[i].username%></h2>
+      <img
+      src="data:<%= users[i].profilePicture.image.contentType %>;base64,<%= users[i].profilePicture.image.data.toString('base64')%>"
+      alt="img"
+    />
+    
+    <form action="/artProfile" method="post" class="go-to-visit">
+      <input type="hidden" name="key" value="<%=i%>">
+      <button type="submit">Visit Profile</button>
+    </form>
+  </div> 
+    <%}%> 
+  
+  </div>
+  <%- include ('footer.ejs') %>
+</div>
+  </body>
+</html>
